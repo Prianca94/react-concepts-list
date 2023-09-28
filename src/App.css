@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+/* 200px default both */
+.comp1{
+  height: 120px;
+  width: 120px; 
+}
