@@ -6,16 +6,18 @@ export default function Immurabledatastructure(props) {
     
 
     const updateBookInfo=()=>{
-        const newBookInfo={...bookInfo}
-        newBookInfo.bookname="A Better Book";
-        setBookInfo(newBookInfo);
+        // const newBookInfo={...bookInfo}
+        // newBookInfo.bookname="A Better Book";
+        // setBookInfo(newBookInfo);
+
+        setBookInfo(prevBookInfo=>({...prevBookInfo,bookname:"A Better Book"}))
     }
     
 
     return (
         <>
             <button onClick={updateBookInfo}>Click to update</button>
-            <p>{bookInfo}</p>
+            <p>{bookInfo.bookname}</p>
         </>
     )
 }
